@@ -15,8 +15,18 @@ async function getUser(user) {
 	result.forEach(element => {
 		if(!element["fork"]){
 			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'><img class='card-img-top'";
+
 			//Image URL
-			repo_card_contents += "src='https://cdn.dribbble.com/users/476251/screenshots/2619255/attachments/523315/placeholder.png' alt='Card image cap'>";
+			var repo_image = "projectdata/" + element["name"] + ".png";
+			// var fs = new File(repo_image);
+
+			// if(!doesFileExist("projectdata/placeholder.png")){
+				repo_card_contents += "src='" + "projectdata/placeholder.png" + "' alt='Card image cap'>";
+			// }
+			// else{
+			// 	repo_card_contents += "src='" + repo_image + "' alt='Card image cap'>";
+			// }
+
 			repo_card_contents += "<div class='card-body'> <h5>";
 			repo_card_contents += element["name"]; //Project Name
 			repo_card_contents += "</h5><p id='description' class='card-text'>";
@@ -27,6 +37,18 @@ async function getUser(user) {
 		}
 	});
 	div_repo_cards.innerHTML = repo_card_contents;
+}
+
+function doesFileExist(urlToFile) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
+     
+    if (xhr.status == "404") {
+        return false;
+    } else {
+        return true;
+    }
 }
 
 
