@@ -28,12 +28,108 @@
 }
 
 footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 footer p {
   margin-bottom: .25rem;
 }
+
+.stickynk {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	right: 0;
+	font-size: 20px;
+	padding: 20px;
+	z-index: 100;
+  }
+
+  .stickysocial {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 20px;
+	padding: 10px;
+	z-index: 100;
+	border: 10px;
+	border-color: black;
+  }
+
+.btn-group {
+	border-color: black;
+}
+
+.btn {
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	padding: 14px 20px;
+	font-size: 12px;
+	cursor: pointer;
+  }
+  
+  /* Green */
+  .success {
+	border-color: #4CAF50;
+	color: green;
+  }
+  
+  .success:hover {
+	background-color: #4CAF50;
+	color: white;
+  }
+  
+  /* Blue */
+  .info {
+	border-color: #2196F3;
+	color: dodgerblue;
+  }
+  
+  .info:hover {
+	background: #2196F3;
+	color: white;
+  }
+  
+  /* Orange */
+  .warning {
+	border-color: #ff9800;
+	color: orange;
+  }
+  
+  .warning:hover {
+	background: #ff9800;
+	color: white;
+  }
+  
+  /* Red */
+  .danger {
+	border-color: #f44336;
+	color: red;
+  }
+  
+  .danger:hover {
+	background: #f44336;
+	color: white;
+  }
+  
+  /* Gray */
+  .default {
+	border-color: #e7e7e7;
+	color: black;
+  }
+  
+  .default:hover {
+	background: #e7e7e7;
+  }
+
+  /* .stickynk {
+	position: sticky;
+	top: 0;
+	font-size: 20px;
+	padding: 10px;
+	z-index: 100;
+  } */
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
