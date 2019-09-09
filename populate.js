@@ -8,24 +8,24 @@ async function getUser(user) {
 		return
 	}
 	SLUG_REQUEST = "users/" + user + "/repos";
-	FILTER = "?type=source;sort=created";
+	FILTER = "?type=owner;sort=pushed";
 	const response = await fetch(GITHUB_BASE_API + SLUG_REQUEST + FILTER);
 	const result = await response.json();
 	var repo_card_contents = await "";
 	result.forEach(element => {
+		if(element["name"] == "fireball"){console.log(element); alert("fireball found")}
+
 		if(!element["fork"]){
 			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'><img class='card-img-top'";
 
 			//Image URL
-			var repo_image = "projectdata/" + element["name"] + ".png";
-			// var fs = new File(repo_image);
-
-			// if(!doesFileExist("projectdata/placeholder.png")){
+			var repo_image = "http://ndkshr.me/portfolio/projectdata/" + element["name"] + ".png";
+			if(!doesFileExist(repo_image)){
 				repo_card_contents += "src='" + "projectdata/placeholder.png" + "' alt='Card image cap'>";
-			// }
-			// else{
-			// 	repo_card_contents += "src='" + repo_image + "' alt='Card image cap'>";
-			// }
+			}
+			else{
+				repo_card_contents += "src='" + repo_image + "' alt='Card image cap'>";
+			}
 
 			repo_card_contents += "<div class='card-body'> <h5>";
 			repo_card_contents += element["name"]; //Project Name
@@ -34,6 +34,8 @@ async function getUser(user) {
 			repo_card_contents += "</p><div class='d-flex justify-content-between align-items-center'><div class='btn-group'>";
 			repo_card_contents += "<a href='" + element["html_url"]; //Repo Link
 			repo_card_contents += "'><button type='button' class='btn btn-dark'><strong>View / Source</strong></button></a></div></div></div></div></div>"
+
+			// console.log(repo_image);
 		}
 	});
 	div_repo_cards.innerHTML = repo_card_contents;
