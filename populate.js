@@ -13,8 +13,6 @@ async function getUser(user) {
 	const result = await response.json();
 	var repo_card_contents = await "";
 	result.forEach(element => {
-		if(element["name"] == "fireball"){console.log(element); alert("fireball found")}
-
 		if(!element["fork"]){
 			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'><img class='card-img-top'";
 
