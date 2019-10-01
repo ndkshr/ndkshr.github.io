@@ -17,7 +17,7 @@ async function getUser(user) {
 			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'><img class='card-img-top'";
 
 			//Image URL
-			var repo_image = "http://ndkshr.me/portfolio/projectdata/" + element["name"] + ".png";
+			var repo_image = "https://ndkshr.me/portfolio/projectdata/" + element["name"] + ".png";
 			if(!doesFileExist(repo_image)){
 				repo_card_contents += "src='" + "projectdata/placeholder.png" + "' alt='Card image cap'>";
 			}
