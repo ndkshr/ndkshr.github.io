@@ -3,7 +3,7 @@ const USERNAME = "ndkshr";
 var div_repo_cards = document.getElementById("repo_cards");
 
 async function getUser(user) {
-	const error_message = "<strong>Sorry no repositories can be retrieved now! :(</strong>" + " Hey, are you using Internet Browser?";
+	const error_message = "<strong>Sorry no repositories can be retrieved now! :(</strong>" + " Hey, are you using Internet Explorer?";
 	if (!div_repo_cards) {
 		return
 	}
@@ -28,7 +28,7 @@ async function getUser(user) {
 			repo_card_contents += "<div class='card-body'> <h5>";
 			repo_card_contents += element["name"]; //Project Name
 			repo_card_contents += "</h5><p id='description' class='card-text'>";
-			repo_card_contents += element["description"]; //Description 
+			repo_card_contents += element["description"]; //Description
 			repo_card_contents += "</p><div class='d-flex justify-content-between align-items-center'><div class='btn-group'>";
 			repo_card_contents += "<a href='" + element["html_url"]; //Repo Link
 			repo_card_contents += "'><button type='button' class='btn btn-dark'><strong>View / Source</strong></button></a></div></div></div></div></div>"
@@ -43,13 +43,10 @@ function doesFileExist(urlToFile) {
     var xhr = new XMLHttpRequest();
     xhr.open('HEAD', urlToFile, false);
     xhr.send();
-     
+
     if (xhr.status == "404") {
         return false;
     } else {
         return true;
     }
 }
-
-
-
