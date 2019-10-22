@@ -1,6 +1,8 @@
 const GITHUB_BASE_API = "https://api.github.com/";
 const USERNAME = "ndkshr";
 var div_repo_cards = document.getElementById("repo_cards");
+var gifList = ["batman", "guyruns", "mandance", "manwalks", "zombie"];
+
 
 var total_repo_count = 0;
 
@@ -21,13 +23,6 @@ async function getUser(user) {
 
 			//Image URL
 			var repo_image = "https://ndkshr.me/portfolio/projectdata/" + element["name"] + ".png";
-			// if(!doesFileExist(repo_image)){
-				// repo_card_contents += "<img class='card-img-top src'='" + "projectdata/placeholder.png" + "' alt='Card image cap'>";
-			// }
-			// else{
-			// 	repo_card_contents += "src='" + repo_image + "' alt='Card image cap'>";
-			// }
-
 			repo_card_contents += "<div class='card-body'> <h5>";
 			repo_card_contents += element["name"]; //Project Name
 			repo_card_contents += "</h5><p id='description' class='card-text'>";
@@ -42,18 +37,17 @@ async function getUser(user) {
 	div_repo_cards.innerHTML = repo_card_contents;
 }
 
-function doesFileExist(urlToFile) {
-	console.log(urlToFile);
-    var xhr = new XMLHttpRequest();
-    xhr.open('HEAD', urlToFile, false);
-    xhr.send();
+// $(".card").mouseover(function() {
+// 	var index = Math.random() * gifList.length;
+//
+// 	var imageUrl = "projectdata/gifs/" + gifList[index] + ".gif"
+//     $(this).css("background-image",imageUrl);
+// });
 
-    if (xhr.status == "404") {
-        return false;
-    } else {
-        return true;
-    }
-}
+// $(".card").mouseout(function() {
+// 	$(this).css("background-color","white");
+// });
+
 
 // Template for the project CARD
 /*

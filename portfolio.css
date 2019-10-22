@@ -154,7 +154,7 @@ footer p {
 }
 
 .card{
-	box-shadow: 5px 8px 8px grey;
+	box-shadow: 2px 4px 8px grey;
 	background-color: white;
 	transition: height 1s;
   	-webkit-transition: height 1s;
@@ -163,7 +163,17 @@ footer p {
 	box-shadow: 1px 1px 2px grey;
 	background-color: white;
 }
+.card:hover{
+	background-image: url(projectdata/gifs/batman.gif);
+	background-position: right;
+	background-size:contain;
+	background-repeat: no-repeat;
+}
 
 .shadow{
-	box-shadow: 5px 10px 10px grey;
+	box-shadow: 8px 15px 10px grey;
+}
+
+.bg-light{
+	background-color: white !important;
 }
