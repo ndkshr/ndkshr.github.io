@@ -51,3 +51,49 @@ function doesFileExist(urlToFile) {
         return true;
     }
 }
+
+// Template for the project CARD
+/*
+<!-- ============================================================================================== -->
+<!-- Cards -->
+<!-- ============================================================================================== -->
+
+<!-- <div class="col-md-4">
+	<div class="card mb-4 box-shadow">
+		<img class="card-img-top"
+			src="https://cdn.dribbble.com/users/476251/screenshots/2619255/attachments/523315/placeholder.png"
+			alt="Card image cap">
+
+		<div class="card-body">
+			<h5 id="full_name">
+
+				Project Name
+
+			</h5>
+
+			<p id="description" class="card-text">
+				This is a wider card with small description about the project and
+				what it does.
+			</p>
+
+			<div class="d-flex justify-content-between align-items-center">
+				<div class="btn-group">
+
+					<a href="#"
+					id="html_url">
+						<button type="button" class="btn btn-dark">
+							<strong>View / Source</strong>
+						</button>
+					</a>
+
+					<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+				<!-- </div>
+			</div>
+		</div>
+	</div>
+</div>
+-->
+
+<!-- ============================================================================================== -->
+
+*/

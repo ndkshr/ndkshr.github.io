@@ -47,14 +47,16 @@ footer p {
   }
 
   .stickysocial {
+	margin: 10px;
 	position: fixed;
 	bottom: 0;
 	right: 0;
 	font-size: 20px;
-	padding: 10px;
 	z-index: 100;
 	border: 10px;
 	border-color: black;
+	border-radius: .25rem;
+	box-shadow: 5px 10px 20px grey;
   }
 
 .btn-group {
@@ -149,4 +151,16 @@ footer p {
 	white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#main_jumbotron_section{
+	background-color: black;
+}
+
+.ndkshr_data{
+	color: white;
+}
+
+.card{
+	box-shadow: 5px 10px 8px grey;
 }
