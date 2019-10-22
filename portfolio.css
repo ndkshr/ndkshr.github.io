@@ -155,4 +155,9 @@ footer p {
 
 .card{
 	box-shadow: 5px 10px 8px grey;
+	background-color: white;
+}
+
+.shadow{
+	box-shadow: 5px 10px 10px grey;
 }
