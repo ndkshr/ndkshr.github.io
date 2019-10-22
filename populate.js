@@ -14,16 +14,16 @@ async function getUser(user) {
 	var repo_card_contents = await "";
 	result.forEach(element => {
 		if(!element["fork"]){
-			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'><img class='card-img-top'";
+			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'>";
 
 			//Image URL
 			var repo_image = "https://ndkshr.me/portfolio/projectdata/" + element["name"] + ".png";
-			if(!doesFileExist(repo_image)){
-				repo_card_contents += "src='" + "projectdata/placeholder.png" + "' alt='Card image cap'>";
-			}
-			else{
-				repo_card_contents += "src='" + repo_image + "' alt='Card image cap'>";
-			}
+			// if(!doesFileExist(repo_image)){
+				// repo_card_contents += "<img class='card-img-top src'='" + "projectdata/placeholder.png" + "' alt='Card image cap'>";
+			// }
+			// else{
+			// 	repo_card_contents += "src='" + repo_image + "' alt='Card image cap'>";
+			// }
 
 			repo_card_contents += "<div class='card-body'> <h5>";
 			repo_card_contents += element["name"]; //Project Name
@@ -40,6 +40,7 @@ async function getUser(user) {
 }
 
 function doesFileExist(urlToFile) {
+	console.log(urlToFile);
     var xhr = new XMLHttpRequest();
     xhr.open('HEAD', urlToFile, false);
     xhr.send();
