@@ -2,6 +2,8 @@ const GITHUB_BASE_API = "https://api.github.com/";
 const USERNAME = "ndkshr";
 var div_repo_cards = document.getElementById("repo_cards");
 
+var total_repo_count = 0;
+
 async function getUser(user) {
 	const error_message = "<strong>Sorry no repositories can be retrieved now! :(</strong>" + " Hey, are you using Internet Explorer?";
 	if (!div_repo_cards) {
@@ -14,6 +16,7 @@ async function getUser(user) {
 	var repo_card_contents = await "";
 	result.forEach(element => {
 		if(!element["fork"]){
+			total_repo_count = total_repo_count + 1;
 			repo_card_contents += "<div class='col-md-4'><div class='card mb-4 box-shadow'>";
 
 			//Image URL
