@@ -72,6 +72,14 @@ footer p {
 	cursor: pointer;
   }
 
+  .btn-instagram:hover {
+    background-color: #bc2a8d;
+  }
+
+  .btn-main-details {
+    width: 100px;
+  }
+
   /* Green */
   .success {
 	border-color: #4CAF50;
