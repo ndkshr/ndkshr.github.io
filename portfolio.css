@@ -72,10 +72,6 @@ footer p {
 	cursor: pointer;
   }
 
-  .btn-instagram:hover {
-    background-color: #bc2a8d;
-  }
-
   .btn-main-details {
     width: 100px;
   }
@@ -86,20 +82,10 @@ footer p {
 	color: green;
   }
 
-  .success:hover {
-	background-color: #4CAF50;
-	color: white;
-  }
-
   /* Blue */
   .info {
 	border-color: #2196F3;
 	color: dodgerblue;
-  }
-
-  .info:hover {
-	background: #2196F3;
-	color: white;
   }
 
   /* Orange */
@@ -108,20 +94,10 @@ footer p {
 	color: orange;
   }
 
-  .warning:hover {
-	background: #ff9800;
-	color: white;
-  }
-
   /* Red */
   .danger {
 	border-color: #f44336;
 	color: red;
-  }
-
-  .danger:hover {
-	background: #f44336;
-	color: white;
   }
 
   /* Gray */
@@ -130,19 +106,10 @@ footer p {
 	color: black;
   }
 
-  .default:hover {
-	background: #e7e7e7;
-  }
-
   /* Dark */
   .dark {
 	border-color: #000000;
 	color: rgb(255, 255, 255);
-  }
-
-  .dark:hover {
-	background: #000000;
-	color: white;
   }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
