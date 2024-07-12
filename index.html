@@ -27,7 +27,7 @@
 
 </head>
 
-<body onload="getUser('ndkshr')">
+<body onload="getUser('ndkshr')" style="cursor: ;">
 
 	<!-- Social sticky bar -->
 	<div class="stickysocial">
@@ -50,16 +50,17 @@
 	<!-- Main Banner -->
 	<main role="main">
 		<section id="main_jumbotron_section" class="jumbotron text-center" >
-				<h1 class="jumbotron-heading">
-					<strong class="ndkshr_data">Nandakishor S 🙋‍♂️</strong>
+				<img id="batman-face" src="https://attic.sh/oeag1eeksc7mdtmpwd795ofbylg3" onmouseout="normalface()" onmouseover="batmanface()" width="120px" height=120px />
+				<h1 class="jumbotron-heading" >
+					<strong class="ndkshr_data" id="name_text" onmouseout="normalface()" onmouseover="batmanface()">i'm nandakishor.</strong>
 				</h1>
 				<div class="container">
 					<p class="ndkshr_data" style="text-align=center;">
-						I have over three years of experience in building Android applications for some of the most valuable companies in India. Features authored by me are being used by more than 300 Million users around the world.
+						Android @Lucid Motors
 
-</br></br>I graduated in 2019 with a Bachelors in Information Technology Engineering from Kerala Technological University. Currently pursuing MS in Software Engineering from San Jose State University, California.
+</br>Previously - Android @ Dailyhunt, Josh, Practo</br>Graduated from San Jose State University with an MS in Computer Software Engineering.
 
-</br></br>I occasionally create fun projects - mostly mobile apps and games. And I am passionate about Human Computer Interaction and Machine learning.
+</br></br>
 					</p>
 
 					<a href="https://ndkshr.github.io/resume" class="btn btn-danger my-2 shadow btn-main-details"><strong>Resume</strong></a>
@@ -74,7 +75,7 @@
 		<section>
 			<div class="album py-5 bg-light">
 				<div class="container">
-					<h2 class="jumbotron-heading">🔟📅 Projects</h2> </br>
+					<h2 class="jumbotron-heading">Projects</h2> </br>
 					<div class="row" id="repo_cards">
 
 
@@ -106,6 +107,16 @@
 			function closealert() {
 				var alertBox = document.getElementById("alert-box-ndkshr");
 				alertBox.style.visibility = 'hidden'
+			}
+
+			function normalface() {
+				document.getElementById('batman-face').setAttribute('src', 'normalface.png')
+				document.getElementById('name_text').innerHTML = "i\'m nandakishor."
+			}
+
+			function batmanface() {
+				document.getElementById('batman-face').setAttribute('src', 'batmanface.png')
+				document.getElementById('name_text').innerHTML = "i\'m batman!!!!!!!!"
 			}
 		</script>
 
