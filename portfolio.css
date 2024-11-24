@@ -76,6 +76,10 @@ footer p {
     width: 100px;
   }
 
+ 	.btn-main-details-big {
+    width: 150px;
+  }
+
   /* Green */
   .success {
 	border-color: #4CAF50;

@@ -1,125 +1,113 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="https://ndkshr.github.io/favicon.png">
-
-	<title>Nandakishor S</title>
-
-	<!-- Bootstrap core CSS -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-	<!-- FontAwesome CDN -->
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-	<!-- Custom styles for this template -->
-	<link href="portfolio.css" rel="stylesheet">
-
-</head>
-
-<body onload="getUser('ndkshr')" style="cursor: ;">
-
-	<!-- Social sticky bar -->
-	<div class="stickysocial">
-		<div class="btn-group blocks shadow">
-			<a class="btn btn-success" href="mailto:nandakishor.ten@gmail.com">
-				<i class="fa fa-paper-plane" aria-hidden="true"></i>
-			</a>
-			<a class="btn btn-primary" href="https://facebook.com/ndkshr">
-				<strong>fb</strong>
-			</a>
-			<a class="btn btn-warning" href="https://instagram.com/ndkshr">
-				<strong>ig</strong>
-			</a>
-			<a class="btn btn-info" href="https://linkedin.com/in/ndkshr">
-				<strong>in</strong>
-			</a>
-		</div>
-	</div>
-
-	<!-- Main Banner -->
-	<main role="main">
-		<section id="main_jumbotron_section" class="jumbotron text-center" >
-				<img id="batman-face" src="normalface.png" onmouseout="normalface()" onmouseover="batmanface()" width="120px" height=120px />
-				<h1 class="jumbotron-heading" >
-					<strong class="ndkshr_data" id="name_text" onmouseout="normalface()" onmouseover="batmanface()">i'm nandakishor.</strong>
-				</h1>
-				<div class="container">
-					<p class="ndkshr_data" style="text-align=center;">
-						Android @Lucid Motors
-
-</br>Previously - Android @ Dailyhunt, Josh, Practo</br>Graduated from San Jose State University with an MS in Computer Software Engineering.
-
-</br></br>
-					</p>
-
-					<a href="https://ndkshr.github.io/resume" class="btn btn-danger my-2 shadow btn-main-details"><strong>Resume</strong></a>
-					<a href="https://github.com/ndkshr" class="btn btn-success my-2 shadow btn-main-details"><strong>Github</strong></a>
-					<a href="https://ndkshr.medium.com/" class="btn btn-primary my-2 shadow btn-main-details"><strong>Blog</strong></a>
-	
-				</div>
-		</section>
-
-		<!-- Portfolio and Projects -->
-		<!-- Todo: CARDS FOR EACH PROJECT WILL BE CODED -->
-		<section>
-			<div class="album py-5 bg-light">
-				<div class="container">
-					<h2 class="jumbotron-heading">Projects</h2> </br>
-					<div class="row" id="repo_cards">
-
-
-					</div>  <!-- end repo cards -->
-				</div>
-			</div>
-		</section>
-	</main>
-
-	<footer class="text-muted">
-		<div class="container">
-			<p><em>&copy; github.com/ndkshr; <strong>Nandakishor S, 2021</strong></em></p>
-		</div>
-	</footer>
-
-	<!-- Bootstrap core JavaScript
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://ndkshr.github.io/favicon.png">
+    <title>Nandakishor S</title>
+    <!-- Bootstrap core CSS -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- FontAwesome CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="portfolio.css" rel="stylesheet">
+  </head>
+  <body onload="getUser('ndkshr')" style="cursor: ;">
+    <!-- Social sticky bar -->
+    <div class="stickysocial">
+      <div class="btn-group blocks shadow">
+        <a class="btn btn-success" href="mailto:nandakishor.ten@gmail.com">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn-primary" href="https://facebook.com/ndkshr">
+          <strong>fb</strong>
+        </a>
+        <a class="btn btn-warning" href="https://instagram.com/ndkshr">
+          <strong>ig</strong>
+        </a>
+        <a class="btn btn-info" href="https://linkedin.com/in/ndkshr">
+          <strong>in</strong>
+        </a>
+      </div>
+    </div>
+    <!-- Main Banner -->
+    <main role="main">
+      <section id="main_jumbotron_section" class="jumbotron text-center">
+        <img id="batman-face" src="normalface.png" onmouseout="normalface()" onmouseover="batmanface()" width="120px" height=120px />
+        <h1 class="jumbotron-heading">
+          <strong class="ndkshr_data" id="name_text" onmouseout="normalface()" onmouseover="batmanface()">i'm nandakishor.</strong>
+        </h1>
+        <div class="container">
+          <p class="ndkshr_data" style="text-align=center;"> Android @Lucid Motors </br>Previously - Android @ Dailyhunt, Josh, Practo </br>Graduated from San Jose State University with an MS in Computer Software Engineering. </br>
+            </br>
+          </p>
+          <a href="https://ndkshr.github.io/resume" class="btn btn-danger my-2 shadow btn-main-details">
+            <strong>Resume</strong>
+          </a>
+          <a href="https://github.com/ndkshr" class="btn btn-success my-2 shadow btn-main-details">
+            <strong>Github</strong>
+          </a>
+          <br>
+          <a href="https://ndkshr.github.io/ndkshrPoplar" class="btn btn-warning my-2 shadow btn-main-details-big">
+            <strong>Micro-Blog</strong>
+          </a>
+          <a href="https://ndkshr.medium.com" class="btn btn-info my-2 shadow btn-main-details-big">
+            <strong>Long-Blog</strong>
+          </a>
+        </div>
+      </section>
+      <!-- Portfolio and Projects -->
+      <!-- Todo: CARDS FOR EACH PROJECT WILL BE CODED -->
+      <section>
+        <div class="album py-5 bg-light">
+          <div class="container">
+            <h2 class="jumbotron-heading">Projects</h2>
+            </br>
+            <div class="row" id="repo_cards"></div>
+            <!-- end repo cards -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-muted">
+      <div class="container">
+        <p>
+          <em>&copy; github.com/ndkshr; <strong>Nandakishor S, 2021</strong>
+          </em>
+        </p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-	<script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+      window.jQuery || document.write(' < script src = "../../../../assets/js/vendor/jquery-slim.min.js" > < \/script>')
+    </script>
+    <!-- Populate data JS -->
+    <script src="populate.js"></script>
+    <script>
+      function closealert() {
+        var alertBox = document.getElementById("alert-box-ndkshr");
+        alertBox.style.visibility = 'hidden'
+      }
 
+      function normalface() {
+        document.getElementById('batman-face').setAttribute('src', 'normalface.png')
+        document.getElementById('name_text').innerHTML = "i\'m nandakishor."
+      }
 
-		<!-- Populate data JS -->
-		<script src="populate.js"></script>
-
-		<script>
-			function closealert() {
-				var alertBox = document.getElementById("alert-box-ndkshr");
-				alertBox.style.visibility = 'hidden'
-			}
-
-			function normalface() {
-				document.getElementById('batman-face').setAttribute('src', 'normalface.png')
-				document.getElementById('name_text').innerHTML = "i\'m nandakishor."
-			}
-
-			function batmanface() {
-				document.getElementById('batman-face').setAttribute('src', 'batmanface.png')
-				document.getElementById('name_text').innerHTML = "i\'m batman!!!!!!!!"
-			}
-		</script>
-
-</body>
-
+      function batmanface() {
+        document.getElementById('batman-face').setAttribute('src', 'batmanface.png')
+        document.getElementById('name_text').innerHTML = "i\'m batman!!!!!!!!"
+      }
+    </script>
+  </body>undefined
 </html>
